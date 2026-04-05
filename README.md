@@ -47,8 +47,8 @@ All three training scripts:
 
 - [lineSpecifications/](lineSpecifications/): YAML files defining wall geometry and environment parameters.
   - `spec1.yaml`: Simple horizontal line.
-  - `spec2.yaml`: L-shaped line figure.
-  - `spec3.yaml`: Rectangle outline.
+  - `spec2.yaml`: Vertical line figure.
+  - `spec3.yaml`: L-shaped outline.
   - `spec4.yaml`: Triangle outline.
 
 ### Output directories
