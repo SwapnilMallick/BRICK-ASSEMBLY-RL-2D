@@ -1,0 +1,32 @@
+
+============================================================
+  TEST EPISODE — pure RL / A2C (deterministic policy)
+============================================================
+  Spec  : lineSpecifications/spec3.yaml
+  Bricks: 10   Action space: MultiDiscrete([10 20 20  8])
+------------------------------------------------------------
+  Step   1 │ brick 6 → (x=30.0, y=60.0, θ=0.0°)
+           │ outcome: ✓   reward: +1.2
+  Step   2 │ brick 1 → (x=50.0, y=60.0, θ=0.0°)
+           │ outcome: ✓   reward: +1.2
+  Step   3 │ brick 4 → (x=50.0, y=60.0, θ=0.0°)
+           │ outcome: ✗ overlap   reward: -0.3
+  Step   4 │ brick 7 → (x=40.0, y=60.0, θ=0.0°)
+           │ outcome: ✓   reward: +1.2
+  Step   5 │ brick 2 → (x=40.0, y=60.0, θ=0.0°)
+           │ outcome: ✗ overlap   reward: -0.3
+  Step   6 │ brick 0 → (x=30.0, y=45.0, θ=90.0°)
+           │ outcome: ✓   reward: +1.2
+  Step   7 │ brick 3 → (x=30.0, y=45.0, θ=90.0°)
+           │ outcome: ✗ overlap   reward: -0.3
+  Step   8 │ brick 8 → (x=30.0, y=40.0, θ=90.0°)
+           │ outcome: ✓   reward: +1.2
+  Step   9 │ brick 9 → (x=30.0, y=50.0, θ=90.0°)
+           │ outcome: ✓   reward: +1.2
+  Step  10 │ brick 5 → (x=30.0, y=40.0, θ=90.0°)
+           │ outcome: ✗ overlap   reward: -0.3
+------------------------------------------------------------
+  Episode finished in 10 steps
+  Total reward : +6.000
+  Placed: 6   Discarded: 4   In inventory: 0
+============================================================

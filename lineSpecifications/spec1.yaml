@@ -1,0 +1,45 @@
+name: horizontal_wall
+description: Single horizontal target line, centred in the world
+
+environment:
+  x_dim: 100
+  y_dim: 100
+  total_bricks: 6
+  brick_length: 5
+  brick_width: 2
+
+thickness: 1.0
+
+# Bricks must be placed on the lower side of the horizontal wall
+# "positive" = left of directed segment (35,50)->(65,50) = below the line
+placement_side: positive
+
+line_segments:
+  - start: [35, 50]
+    end:   [65, 50]
+
+plan:
+  - brickID: 0
+    orientation: 0
+    x: 35
+    y: 50
+  - brickID: 1
+    orientation: 0
+    x: 40
+    y: 50
+  - brickID: 2
+    orientation: 0
+    x: 45
+    y: 50
+  - brickID: 3
+    orientation: 0
+    x: 50
+    y: 50
+  - brickID: 4
+    orientation: 0
+    x: 55
+    y: 50
+  - brickID: 5
+    orientation: 0
+    x: 60
+    y: 50

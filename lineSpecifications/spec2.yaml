@@ -1,0 +1,53 @@
+name: vertical_wall
+description: Single vertical target line, centred in the world
+
+environment:
+  x_dim: 100
+  y_dim: 100
+  total_bricks: 8
+  brick_length: 5
+  brick_width: 2
+
+thickness: 1.0
+
+# Bricks must be placed on the left side of the vertical wall
+# "positive" = left of directed segment (50,30)->(50,70) = left of the line
+placement_side: positive
+
+line_segments:
+  - start: [50, 30]
+    end:   [50, 70]
+
+plan:
+  - brickID: 0
+    orientation: 90
+    x: 50
+    y: 30
+  - brickID: 1
+    orientation: 90
+    x: 50
+    y: 35
+  - brickID: 2
+    orientation: 90
+    x: 50
+    y: 40
+  - brickID: 3
+    orientation: 90
+    x: 50
+    y: 45
+  - brickID: 4
+    orientation: 90
+    x: 50
+    y: 50
+  - brickID: 5
+    orientation: 90
+    x: 50
+    y: 55
+  - brickID: 6
+    orientation: 90
+    x: 50
+    y: 60
+  - brickID: 7
+    orientation: 90
+    x: 50
+    y: 65

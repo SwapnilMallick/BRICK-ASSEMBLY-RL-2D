@@ -1,0 +1,32 @@
+
+============================================================
+  TEST EPISODE — pure RL / PPO (deterministic policy)
+============================================================
+  Spec  : lineSpecifications/spec3.yaml
+  Bricks: 10   Action space: MultiDiscrete([10 20 20  8])
+------------------------------------------------------------
+  Step   1 │ brick 4 → (x=30.0, y=60.0, θ=45.0°)
+           │ outcome: ✗ off wall   reward: -0.8
+  Step   2 │ brick 5 → (x=35.0, y=60.0, θ=90.0°)
+           │ outcome: ✗ off wall   reward: -0.8
+  Step   3 │ brick 7 → (x=20.0, y=60.0, θ=90.0°)
+           │ outcome: ✗ off wall   reward: -0.8
+  Step   4 │ brick 6 → (x=30.0, y=60.0, θ=0.0°)
+           │ outcome: ✓   reward: +1.2
+  Step   5 │ brick 9 → (x=30.0, y=60.0, θ=0.0°)
+           │ outcome: ✗ overlap   reward: -0.3
+  Step   6 │ brick 1 → (x=80.0, y=90.0, θ=225.0°)
+           │ outcome: ✗ off wall   reward: -0.8
+  Step   7 │ brick 0 → (x=80.0, y=90.0, θ=0.0°)
+           │ outcome: ✗ off wall   reward: -0.8
+  Step   8 │ brick 3 → (x=25.0, y=90.0, θ=225.0°)
+           │ outcome: ✗ off wall   reward: -0.8
+  Step   9 │ brick 2 → (x=30.0, y=85.0, θ=225.0°)
+           │ outcome: ✗ off wall   reward: -0.8
+  Step  10 │ brick 8 → (x=30.0, y=55.0, θ=135.0°)
+           │ outcome: ✗ off wall   reward: -0.8
+------------------------------------------------------------
+  Episode finished in 10 steps
+  Total reward : -5.500
+  Placed: 1   Discarded: 9   In inventory: 0
+============================================================

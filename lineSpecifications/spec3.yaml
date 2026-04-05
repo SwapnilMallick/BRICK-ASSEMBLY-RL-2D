@@ -1,0 +1,63 @@
+name: l_shaped_wall
+description: L-shaped wall with a horizontal leg and a vertical leg meeting at a corner
+
+environment:
+  x_dim: 100
+  y_dim: 100
+  total_bricks: 10
+  brick_length: 5
+  brick_width: 2
+
+thickness: 1.0
+
+placement_side: positive   # left of directed segment; rejects right-side placements
+
+line_segments:
+  - start: [30, 60]
+    end:   [55, 60]
+  - start: [30, 35]
+    end:   [30, 60]
+
+plan:
+  # Horizontal leg — orientation 0, 5 bricks from x=30 to x=55
+  - brickID: 0
+    orientation: 0
+    x: 30
+    y: 60
+  - brickID: 1
+    orientation: 0
+    x: 35
+    y: 60
+  - brickID: 2
+    orientation: 0
+    x: 40
+    y: 60
+  - brickID: 3
+    orientation: 0
+    x: 45
+    y: 60
+  - brickID: 4
+    orientation: 0
+    x: 50
+    y: 60
+  # Vertical leg — orientation 90, 5 bricks from y=35 to y=60
+  - brickID: 5
+    orientation: 90
+    x: 30
+    y: 35
+  - brickID: 6
+    orientation: 90
+    x: 30
+    y: 40
+  - brickID: 7
+    orientation: 90
+    x: 30
+    y: 45
+  - brickID: 8
+    orientation: 90
+    x: 30
+    y: 50
+  - brickID: 9
+    orientation: 90
+    x: 30
+    y: 55

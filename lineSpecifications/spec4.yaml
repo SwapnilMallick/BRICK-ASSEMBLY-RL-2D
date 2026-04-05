@@ -1,0 +1,78 @@
+name: equilateral_triangle
+description: Equilateral triangle centred at (50, 50) with each side length = 20
+
+environment:
+  x_dim: 100
+  y_dim: 100
+  total_bricks: 12
+  brick_length: 5
+  brick_width: 2
+
+thickness: 1.0
+
+# Vertices (centred at world centre):
+#   Bottom-left : (40, 55.8)
+#   Bottom-right: (60, 55.8)
+#   Top         : (50, 38.5)
+# Each side length ≈ 20 units
+
+line_segments:
+  - start: [40, 55.8]
+    end:   [60, 55.8]
+  - start: [40, 55.8]
+    end:   [50, 38.5]
+  - start: [60, 55.8]
+    end:   [50, 38.5]
+
+plan:
+  # Horizontal base — orientation 0, 4 bricks from x=40 to x=60
+  - brickID: 0
+    orientation: 0
+    x: 40
+    y: 55.8
+  - brickID: 1
+    orientation: 0
+    x: 45
+    y: 55.8
+  - brickID: 2
+    orientation: 0
+    x: 50
+    y: 55.8
+  - brickID: 3
+    orientation: 0
+    x: 55
+    y: 55.8
+  # Left diagonal — orientation 300°, 4 bricks on outer side of (40,55.8)->(50,38.5)
+  - brickID: 4
+    orientation: 300
+    x: 38.268
+    y: 54.799
+  - brickID: 5
+    orientation: 300
+    x: 40.771
+    y: 50.470
+  - brickID: 6
+    orientation: 300
+    x: 43.273
+    y: 46.141
+  - brickID: 7
+    orientation: 300
+    x: 45.775
+    y: 41.813
+  # Right diagonal — orientation 240°, 4 bricks on outer side of (60,55.8)->(50,38.5)
+  - brickID: 8
+    orientation: 240
+    x: 60.000
+    y: 55.800
+  - brickID: 9
+    orientation: 240
+    x: 57.498
+    y: 51.471
+  - brickID: 10
+    orientation: 240
+    x: 54.996
+    y: 47.142
+  - brickID: 11
+    orientation: 240
+    x: 52.493
+    y: 42.813
