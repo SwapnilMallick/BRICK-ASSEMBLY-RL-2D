@@ -154,3 +154,7 @@ The `plan:` section is optional. When omitted, `demo_agent_place_v3.py` uses ran
 | Invalid pick | -2.1 |
 
 **Termination:** Episode ends when all bricks are placed or discarded, or after `max_steps=500` steps.
+
+## Acknowledgements
+
+[Claude Code](https://claude.ai/code) (Anthropic's AI coding assistant) was used for assistance with debugging, coding, and brainstorming throughout the development of this project.
